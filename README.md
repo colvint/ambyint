@@ -3,7 +3,7 @@
 #### Start Geocoding!
 
 - `npm install`
-- `mkdir data` (and place your address.txt there)
+- place your address.txt into the [data directory](https://github.com/colvint/ambyint/tree/master/data)
 - `cp .env.example .env` (and configure the app -- see config description below)
 - `npm start`
 
