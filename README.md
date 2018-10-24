@@ -2,9 +2,9 @@
 
 #### Features
 
-- [Environmental Config](https://github.com/colvint/ambyint/blob/master/.env.example)
-- Effective Google API rate limit management
-- Color highlighted logs
+- [Environmental Config](https://github.com/colvint/ambyint#config)
+- Effective Google API rate limit [management](https://github.com/colvint/ambyint#challenges)
+- Chalk highlighted logs
 
 #### Start Geocoding!
 
@@ -19,7 +19,7 @@
 
 #### Config
 
-A `.env.example` config file has been included to allow easy adjustment of key variables affecting geocoding. Copy this file to `.env` and set your desired variables.
+A [`.env.example` config file](https://github.com/colvint/ambyint/blob/master/.env.example) has been included to allow easy adjustment of key variables affecting geocoding. Copy this file to `.env` and set your desired variables.
 
 ```
 GOOGLE_MAPS_API_KEY=YOUR_API_KEY (note google billing must be enabled but doesn't require actual purchase)
