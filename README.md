@@ -3,8 +3,17 @@
 #### Notes
 
 - Built with node `v10.8.0`
+- Uses ES6 syntax
+
+#### Start Geocoding!
+
 - `npm install`
+- `mkdir data` (and place your address.txt there)
+- `cp .env.example .env` (and configure the app -- see config description below)
 - `npm start`
+
+#### Run tests
+
 - `npm test`
 
 #### Config
@@ -23,4 +32,4 @@ VERBOSE_MODE=true (set to true if you wish to log progress to stdout)
 
 #### Challenges
 
-The main challenges were around Google Geocoder API rate limits. The API imposes a limit of 5000 requests per 100 seconds. To avoid exceeding this limit, this implementation uses npm library `line-by-line` which supports reliable pausing and resuming of reading from a file stream. This, combined with the injection of a delay between API requests, effectively manages [Google's API rate limits](https://developers.google.com/maps/documentation/geocoding/usage-and-billing).
+The main challenge was around Google's Geocoder API [rate limits](https://developers.google.com/maps/documentation/geocoding/usage-and-billing). The API imposes a limit of 5000 requests per 100 seconds. Running afoul of this limit results in `403` errors from the API. To get around this, the implementation uses the [npm library `line-by-line`](https://www.npmjs.com/package/line-by-line) which supports reliable pausing / resuming of a readable file stream. This allowed the injection of a delay between API requests which effectively resolves the issue.

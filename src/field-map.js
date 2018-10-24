@@ -1,3 +1,6 @@
+// fixed-width field mappings
+// https://www.npmjs.com/package/fixy
+
 const fieldMap = [
   {
 		name: "houseNumber",
