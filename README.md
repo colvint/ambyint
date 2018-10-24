@@ -33,3 +33,7 @@ The main challenge was around Google's Geocoder API [rate limits](https://develo
 
 - Built with node `v10.8.0`
 - Uses ES6 syntax
+
+#### Further Development
+
+- With minor adjustments, a non-Google geocoding API can be snapped in. e.g. (`src/geocoders/smarty-streets`)
