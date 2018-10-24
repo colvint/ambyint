@@ -4,6 +4,9 @@
 
 - [Environmental Config](https://github.com/colvint/ambyint#config)
 - Effective Google API rate limit [management](https://github.com/colvint/ambyint#challenges)
+- Adjustable data location
+- Adjustable API delay
+- Verbose mode
 - Chalk highlighted logs
 
 #### Start Geocoding!
@@ -45,3 +48,4 @@ To get around this, the implementation uses the [npm library `line-by-line`](htt
 #### Further Development
 
 - With minor adjustments, a non-Google geocoding API can be snapped in. e.g. (`src/geocoders/smarty-streets`)
+- It would be straightforward to stream address data from a remote source
