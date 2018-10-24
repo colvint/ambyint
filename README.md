@@ -44,6 +44,7 @@ To get around this, the implementation uses the [npm library `line-by-line`](htt
 #### Notes
 
 - Built with node `v11.0.0`
+- Mocha tests
 - Uses ES6 syntax
 
 #### Further Development
