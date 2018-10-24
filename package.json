@@ -1,0 +1,29 @@
+{
+  "name": "ambyint-geocoder-challenge",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:ambyint/full-stack-coding-challenge.git",
+  "author": "Taurus Colvin <taurus.colvin@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon --exec babel-node src/index.js",
+    "test": "mocha --require babel-core/register --watch"
+  },
+  "devDependencies": {
+    "@babel/polyfill": "^7.0.0",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-2": "^6.24.1",
+    "mocha": "^5.2.0",
+    "nodemon": "^1.18.4"
+  },
+  "dependencies": {
+    "@google/maps": "^0.5.5",
+    "chalk": "^2.4.1",
+    "dotenv": "^6.1.0",
+    "fixy": "^1.2.0",
+    "line-by-line": "^0.1.6",
+    "lodash": "^4.17.11"
+  }
+}
