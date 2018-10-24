@@ -7,6 +7,7 @@
 - Adjustable data location
 - Adjustable API delay
 - Verbose mode
+- Yarn ready
 - Chalk highlighted logs
 
 #### Start Geocoding!
