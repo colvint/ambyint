@@ -1,5 +1,11 @@
 ## Ambyint Development Exercise
 
+#### Features
+
+- [Environmental Config](https://github.com/colvint/ambyint/blob/master/.env.example)
+- Effective Google API rate limit management
+- Color highlighted logs
+
 #### Start Geocoding!
 
 - `npm install`
@@ -27,7 +33,9 @@ VERBOSE_MODE=true (set to true if you wish to log progress to stdout)
 
 #### Challenges
 
-The main challenge was around Google's Geocoder API [rate limits](https://developers.google.com/maps/documentation/geocoding/usage-and-billing). The API imposes a limit of 5000 requests per 100 seconds. Running afoul of this limit results in `403` errors from the API. To get around this, the implementation uses the [npm library `line-by-line`](https://www.npmjs.com/package/line-by-line) which supports reliable pausing / resuming of a readable file stream. This allowed the injection of a delay between API requests which effectively resolves the issue.
+The main challenge was around Google's Geocoder API [rate limits](https://developers.google.com/maps/documentation/geocoding/usage-and-billing). The API imposes a limit of 5000 requests per 100 seconds. Running afoul of this limit results in `403` errors from the API. 
+
+To get around this, the implementation uses the [npm library `line-by-line`](https://www.npmjs.com/package/line-by-line) which supports reliable pausing / resuming of a readable file stream. This allowed the injection of a delay between API requests which effectively resolves the issue.
 
 #### Notes
 
